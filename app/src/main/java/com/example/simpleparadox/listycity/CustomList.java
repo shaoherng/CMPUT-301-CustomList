@@ -58,8 +58,8 @@ public class CustomList extends ArrayAdapter<City> {
     public boolean hasCity(City city) {
         for(City c: cities) {
             if(c.compareTo(city) == 0)
-                return false;
+                return true;
         }
-        return true;
+        return false;
     }
 }
